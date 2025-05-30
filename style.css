@@ -17,7 +17,7 @@ body {
 
 .container {
     width: 80vw;
-    min-width: 500px;
+    min-width: 360px;
     max-width: 1000px;
 }
 
