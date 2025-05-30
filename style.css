@@ -10,14 +10,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-attachment: fixed;
     background-image: linear-gradient(rgb(211, 97, 53), rgb(162, 73, 54));
 }
 
 .container {
     width: 80vw;
-    min-width: 360px;
+    min-width: 280px;
     max-width: 1000px;
 }
 
@@ -25,7 +25,6 @@ body {
     font-size: 2rem;
     font-weight: 800;
     color: #f1ede8;
-    margin-bottom: 5px;
 }
 
 .input-container {
@@ -99,7 +98,7 @@ body {
 }
 
 .progress-container {
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .progress-container #task-progress {
@@ -114,7 +113,6 @@ body {
 
 .list-container {
     overflow: auto;
-    max-height: 80vh;
     margin: 0 20px;
     max-height: 75vh;
 
@@ -219,4 +217,41 @@ body {
     text-align: center;
     color: #f1ede8;
     font-size: 0.7rem;
+}
+
+@media (max-width: 600px) {
+    * {
+      font-size: 0.9rem;
+    }
+
+    .container {
+        width: 95vw;
+    }
+
+    .input-container {
+        padding: 5px 10px;
+        margin: 5px;
+        margin-bottom: 10px;
+    }
+
+    .list-container {
+        margin: 0 5px
+    }
+
+    .list-container li {
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .header h1 {
+        margin-bottom: 12px;
+    }
+
+    .progress-container #task-progress {
+        height: 20px;
+    }
+
+    .progress-container {
+        margin-top: 5px;
+    }
 }
