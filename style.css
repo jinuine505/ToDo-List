@@ -239,7 +239,8 @@ body {
     }
 
     .list-container {
-        margin: 0 5px
+        margin: 0 5px;
+        max-height: 70vh;
     }
 
     .list-container li {
