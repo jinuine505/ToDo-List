@@ -133,7 +133,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 5px;
     color:#f1ede8;
     border-radius: 10px;
 }
@@ -239,7 +239,6 @@ body {
     }
 
     .list-container li {
-        padding: 5px;
         margin-bottom: 10px;
     }
 
