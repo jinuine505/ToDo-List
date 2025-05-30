@@ -57,6 +57,10 @@ body {
 .input-container .input-btns {
     display: flex;
     flex-wrap: nowrap;
+    background-color: rgb(36, 37, 36);
+    border-radius: 10px;
+    padding: 0 2px;
+    margin-left: 10px;
 }
 
 .input-container #enter-task {
@@ -68,34 +72,31 @@ body {
 }
 
 .input-container #add-task {
-    border-radius: 10px;
-    padding: 6px;
     color: #f1ede8;
-    margin-left: 5px;
-    background-color: #2274A5;
+    padding: 5px;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     transition-duration: 0.4s;
 }
 
 .input-container #add-task:hover {
-    background-color: #175274;
+    color: rgb(0, 255, 0);
 
 }
 
 .input-container #clear-tasks {
-    border-radius: 10px;
-    padding: 6px;
     margin-left: 5px;
+    padding: 5px;
     color: #f1ede8;
-    background-color: #2274A5;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     transition-duration: 0.4s;
 }
 
 .input-container #clear-tasks:hover {
-    background-color: red;
+    color: red;
 }
 
 .progress-container {
@@ -145,53 +146,51 @@ body {
 }
 
 .btn-container {
+    background-color: rgb(36, 37, 36);
+    border-radius: 10px;
     display: inline-flex;
+    padding: 0 2px;
 }
 
 .complete-btn {
-    background-color: rgb(60, 111, 157);
+    background-color: transparent;
     color:#f1ede8;
     margin-right: 5px;
-    border-radius: 10px;
     padding: 5px;
     border: none;
-    transition-duration: 0.4s
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .complete-btn:hover {
-    background-color: rgb(31, 61, 88);
     color: rgb(0, 255, 0);
-    cursor: pointer;
 }
 
 .undo-btn {
-    background-color: rgb(95, 95, 95);
+    background-color: transparent;
     color:#f1ede8;
-    border-radius: 10px;
     margin-right: 5px;
     padding: 5px;
     border: none;
-    transition-duration: 0.4s
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .undo-btn:hover {
-    background-color: rgb(59, 59, 59);
-    cursor: pointer;
+    color: rgb(84, 84, 84);
 }
 
 .del-btn {
-    background-color: rgb(60, 111, 157);
+    background-color: transparent;
     color:#f1ede8;
-    border-radius: 10px;
     padding: 5px;
     border: none;
-    transition-duration: 0.4s
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .del-btn:hover {
-    background-color: rgb(31, 61, 88);
     color: red;
-    cursor: pointer;
 }
 
 .complete {

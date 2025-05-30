@@ -63,9 +63,13 @@ function createTaskFromStorage(text, isCompleted, taskList)
     // Add test to list item
     newTask.appendChild(taskText);
 
-    // Complete button
+    // Create complete button
+    const checkIcon = document.createElement('i'); // Add check icon to complete button
+    checkIcon.classList.add('fa-solid', 'fa-check');
+    completeBtn.appendChild(checkIcon);
+    
     completeBtn.classList.add('complete-btn');
-    completeBtn.textContent = "Complete";
+    completeBtn.setAttribute('title', 'Complete task')
     completeBtn.addEventListener('click', () => {
         functions.completeTask(newTask);
         saveToStorage(taskList);
@@ -73,9 +77,13 @@ function createTaskFromStorage(text, isCompleted, taskList)
         undoBtn.style.display = 'inline-block'; // Display undo button
     });
 
-    // Undo button
+    // Create undo button
+    const undoIcon = document.createElement('i'); // Add undo icon to undo button
+    undoIcon.classList.add('fa-solid', 'fa-rotate-left');
+    undoBtn.appendChild(undoIcon);
+
     undoBtn.classList.add('undo-btn');
-    undoBtn.textContent = "Undo";
+    undoBtn.setAttribute('title', 'Undo complete')
     undoBtn.style.display = 'none';
     undoBtn.addEventListener('click', () => {
         functions.undoTask(newTask);
@@ -84,9 +92,12 @@ function createTaskFromStorage(text, isCompleted, taskList)
         completeBtn.style.display = 'inline-block'; // Display complete button
     });
 
-    // Delete button
+    // Create delete button
+    const icon = document.createElement('i'); // Add trash icon to delete button
+    icon.classList.add('fa-solid', 'fa-trash')
+    delBtn.appendChild(icon);
     delBtn.classList.add('del-btn');
-    delBtn.textContent = "Delete";
+    delBtn.setAttribute('title', 'Delete task')
     delBtn.style.display = 'inline-block';
     delBtn.addEventListener('click', () => {
         functions.delTask(newTask);
