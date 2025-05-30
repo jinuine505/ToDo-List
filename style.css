@@ -224,6 +224,10 @@ body {
       font-size: 0.9rem;
     }
 
+    body {
+        min-height: 100dvh;
+    }
+
     .container {
         width: 95vw;
     }
