@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>To-Do List</title>
+
+        <!-- Stylesheet -->
+        <link href="style.css" rel="stylesheet">
+        
+        <!-- Font Links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="input-container">
+                <div class="header">
+                    <h1>To-Do List</h1>
+                </div>
+
+                <div id="list-modification">
+                    <div class="input-field">                
+                        <div id="error-message"></div>
+                        <input type="text" id="enter-task" name="task" placeholder="Enter Task" maxlength="55">
+                    </div>
+                    
+                    <div class="input-btns">
+                        <button id="add-task">Add</button>
+                        <button id="clear-tasks">Clear</button>
+                    </div>
+                </div>
+            
+                <div class="progress-container">
+                    <progress id="task-progress" min="0" max="100" value="0"></progress>
+                    <p class="progress-count">
+                        <span id="progress-count-complete">0</span>
+                        /
+                        <span id="progress-count-total">0</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="list-container">
+                <ul id="task-list"></ul>
+                <p id="creator-tag">Developed by Jin Nguyen</p>
+            </div>
+        </div>
+        
+        <!-- Scripts -->
+        <script type="module" src="eventlistener.js"></script>
+    </body>
+</html>

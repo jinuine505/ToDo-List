@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', Arial, Helvetica;
+    font-size: 1.05rem;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgb(211, 97, 53), rgb(162, 73, 54));
+}
+
+.container {
+    width: 80vw;
+    min-width: 500px;
+    max-width: 1000px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #f1ede8;
+    margin-bottom: 5px;
+}
+
+.input-container {
+    background-color: rgb(40, 43, 40);
+    margin: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.input-container .input-field {
+    position: relative;
+    width: 100%;
+}
+
+.input-container #error-message {
+    position: absolute;
+    visibility: hidden;
+    top: -65%;
+    color: red;
+    font-size: 0.9rem;
+}
+
+.input-container #list-modification {
+    display: flex;
+    justify-content: center;
+}
+
+.input-container .input-btns {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.input-container #enter-task {
+    border-radius: 10px;
+    width: 100%;
+    background-color: #f1ede8;
+    padding: 6px;
+    border: none;
+}
+
+.input-container #add-task {
+    border-radius: 10px;
+    padding: 6px;
+    color: #f1ede8;
+    margin-left: 5px;
+    background-color: #2274A5;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.input-container #add-task:hover {
+    background-color: #175274;
+
+}
+
+.input-container #clear-tasks {
+    border-radius: 10px;
+    padding: 6px;
+    margin-left: 5px;
+    color: #f1ede8;
+    background-color: #2274A5;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.input-container #clear-tasks:hover {
+    background-color: red;
+}
+
+.progress-container {
+    margin-top: 10px;
+}
+
+.progress-container #task-progress {
+    height: 30px;
+    accent-color: rgb(113, 152, 118);
+    width: 100%;
+}
+
+.progress-count {
+    color: #f1ede8;
+}
+
+.list-container {
+    overflow: auto;
+    max-height: 80vh;
+    margin: 0 20px;
+    max-height: 75vh;
+
+    /* Hide Scroll Bar */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Hide Scroll Bar */
+.list-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.list-container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    color:#f1ede8;
+    border-radius: 10px;
+}
+
+.task-text {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: normal;
+    margin-right: 10px;
+}
+
+.btn-container {
+    display: inline-flex;
+}
+
+.complete-btn {
+    background-color: rgb(60, 111, 157);
+    color:#f1ede8;
+    margin-right: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    transition-duration: 0.4s
+}
+
+.complete-btn:hover {
+    background-color: rgb(31, 61, 88);
+    color: rgb(0, 255, 0);
+    cursor: pointer;
+}
+
+.undo-btn {
+    background-color: rgb(95, 95, 95);
+    color:#f1ede8;
+    border-radius: 10px;
+    margin-right: 5px;
+    padding: 5px;
+    border: none;
+    transition-duration: 0.4s
+}
+
+.undo-btn:hover {
+    background-color: rgb(59, 59, 59);
+    cursor: pointer;
+}
+
+.del-btn {
+    background-color: rgb(60, 111, 157);
+    color:#f1ede8;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    transition-duration: 0.4s
+}
+
+.del-btn:hover {
+    background-color: rgb(31, 61, 88);
+    color: red;
+    cursor: pointer;
+}
+
+.complete {
+    background-color: rgb(113, 152, 118);
+}
+
+.to-do {
+    background-color: rgb(155, 8, 55);
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
+
+#creator-tag {
+    text-align: center;
+    color: #f1ede8;
+    font-size: 0.7rem;
+}
