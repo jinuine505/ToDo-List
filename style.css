@@ -11,6 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    min-height: 100dvh;
     background-attachment: fixed;
     background-image: linear-gradient(rgb(211, 97, 53), rgb(162, 73, 54));
 }
@@ -114,7 +115,7 @@ body {
 .list-container {
     overflow: auto;
     margin: 0 20px;
-    max-height: 75vh;
+    max-height: 75dvh;
 
     /* Hide Scroll Bar */
     -ms-overflow-style: none;
@@ -224,10 +225,6 @@ body {
       font-size: 0.9rem;
     }
 
-    body {
-        min-height: 100dvh;
-    }
-
     .container {
         width: 95vw;
     }
@@ -240,7 +237,6 @@ body {
 
     .list-container {
         margin: 0 5px;
-        max-height: 70dvh;
     }
 
     .list-container li {
