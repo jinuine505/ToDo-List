@@ -27,3 +27,10 @@ A straightforward to-do list allowing users to store and track their tasks.
   <li>Saving to local storage</li>
 </ul>
 
+<h2>Getting started</h2>
+<ol>
+  <li>Enter your task in the text field</li>
+  <li>Press the add button or hit enter/return on your keyboard</li>
+  <li>Track and mark your tasks as completed</li>
+  <li>Finished or unwanted tasks can be deleted, or optionally, the entire list of tasks can be cleared.</li>
+</ol>
