@@ -88,7 +88,7 @@ export function addTask(taskList, taskInput) {
 /** Clears all tasks in the given task list */
 export function clearTasks(taskList) {
     if (!confirmEmpty(taskList)) {
-        if (confirm("Are you sure you want to clear all tasks?") == true) {
+        if (confirm("Are you sure you want to clear?") == true) {
             taskList.replaceChildren(); // Remove all tasks from list
 
             saveToStorage(taskList); // Update local storage
@@ -148,7 +148,7 @@ function validateInput(taskInput) {
     }
 
     // Check that input characters are allowed
-    const regEx = /^[a-zA-Z0-9!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~\s]$/;
+    const regEx = /[a-zA-Z0-9!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~\s]/;
     if (!regEx.test(taskInput.value.trim())) {
         shakeAnimation(taskInput); // Run text field animation
     
