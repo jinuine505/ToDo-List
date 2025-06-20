@@ -45,6 +45,6 @@ or<br />
 3. Track and mark your tasks as completed
 4. Finished or unwanted tasks can be deleted, or optionally, the entire list of tasks can be cleared
 
-Site Images
+## Site Images
 <img width="1728" alt="Image" src="https://github.com/user-attachments/assets/04c78ff1-232e-4cca-a230-0dec2c22d5a3" />
 <img width="1728" alt="Image" src="https://github.com/user-attachments/assets/707684f3-0d2a-466e-a2c7-75f2257f8330" />
