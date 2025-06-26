@@ -19,6 +19,9 @@ A straightforward to-do list allowing users to store and track their tasks.
 * Desktop and mobile viewing
 * Saving to local storage
 
+## Library
+1. [Font Awesome](https://fontawesome.com/) - An icon library and toolkit for the icons in this project
+
 ## Running Locally
 Prerequisites
 * Recommended: [VS Code](https://code.visualstudio.com/) with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension by Ritwick Dey for full functionality
